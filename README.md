@@ -26,9 +26,9 @@ Install-Module -Name ResizeImageModule
 # Samples
 
 ```powershell
-PS C:\WINDOWS\system32> Resize-Image -InputFile "C:/image.png" -OutputFile "C:/image2.png" -Width 300 -Height 300
+Resize-Image -InputFile "C:/image.png" -OutputFile "C:/image2.png" -Width 300 -Height 300
 ```
 
 ```powershell
-PS C:\PicturesFolder> Resize-ImagesInFolder -Width 300 -Height 300
+Resize-ImagesInFolder -Width 300 -Height 300
 ```
