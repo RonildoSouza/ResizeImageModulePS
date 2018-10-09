@@ -1,8 +1,0 @@
-New-ModuleManifest -Path "./ResizeImageModule.psd1" -FunctionsToExport Resize-Image, Resize-ImagesInFolder -Author "Ronildo Souza" -CompanyName "By RNS" -ModuleVersion 1.0.0 -Description "PowerShell Module to Resize Image" -ProjectUri https://github.com/RonildoSouza/ResizeImageModulePS -LicenseUri https://github.com/RonildoSouza/ResizeImageModulePS/blob/master/LICENSE
-
-
-Publish-Module -Name "./ResizeImageModule.psd1" -NuGetApiKey ""
-
-
-Install-PackageProvider Nuget –Force
-Install-Module –Name PowerShellGet –Force
