@@ -16,12 +16,14 @@ Install-Module -Name ResizeImageModule
     - OutputFile [string]
     - Width [int32]
     - Height [int32]
+    - **(optional)** ProportionalResize [bool] (Default $true)
     
 ### Resize-ImagesInFolder
   - Parameters
     - Width [int32]
     - Height [int32]
     - **(optional)** FolderPath [string]
+    - **(optional)** ProportionalResize [bool] (Default $true)
 
 # Samples
 
@@ -30,5 +32,5 @@ Resize-Image -InputFile "C:/image.png" -OutputFile "C:/image2.png" -Width 300 -H
 ```
 
 ```powershell
-Resize-ImagesInFolder -Width 300 -Height 300
+Resize-ImagesInFolder -Width 300 -Height 300 -ProportionalResize $false
 ```
