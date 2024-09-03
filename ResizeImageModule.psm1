@@ -73,6 +73,9 @@
 
     # Save the image
     $destImage.Save($OutputFile)
+
+    # Close source file
+    $image.Dispose()
 }
 
 function Resize-ImagesInFolder {
