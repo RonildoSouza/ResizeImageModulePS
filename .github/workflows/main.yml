@@ -16,4 +16,4 @@ jobs:
         with:
           token: ${{secrets.PS_GALLERY_KEY}}
           target: gallery
-          path: src
+          path: ResizeImageModule.psd1
