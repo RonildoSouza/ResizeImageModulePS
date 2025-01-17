@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          dotnet-version: 5.0.x
       - name: Publish PowerShell Module
         uses: natescherer/publish-powershell-action@v1
         with:
