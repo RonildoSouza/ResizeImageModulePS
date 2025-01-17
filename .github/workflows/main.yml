@@ -14,6 +14,6 @@ jobs:
       - name: Publish PowerShell Module
         uses: natescherer/publish-powershell-action@v1
         with:
-          token: ${{secrets.PS_GALLERY_KEY}}
+          apiKey: ${{secrets.PS_GALLERY_KEY}}
           target: gallery
           path: src
