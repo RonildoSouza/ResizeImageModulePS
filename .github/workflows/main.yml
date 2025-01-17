@@ -12,12 +12,13 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          dotnet-version: 5.0.x
+          path: src
+
       - name: Publish PowerShell Module
         uses: natescherer/publish-powershell-action@v1
         with:
           token: ${{secrets.PS_GALLERY_KEY}}
           target: gallery
-          path: ResizeImageModule.psd1
+          path: src
